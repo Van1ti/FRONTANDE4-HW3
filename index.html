@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лінійне завантаження зображень (Lazy Loading) з IntersectionObserver</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Демонстрація Lazy Loading</h1>
+        <p class="intro">Зображення завантажуються автоматично при прокручуванні сторінки (через IntersectionObserver) або при натисканні на кнопку нижче.</p>
+
+        <button id="manualLoadBtn" class="load-btn">Завантажити всі зображення вручну</button>
+
+        <div class="image-card">
+            <h2>Зображення 1: Природа</h2>
+            <div class="image-wrapper">
+                
+                <img data-src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Природа 1">
+            </div>
+        </div>
+
+        <div class="image-card">
+            <h2>Зображення 2: Гори</h2>
+            <div class="image-wrapper">
+                <img data-src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80" alt="Гори">
+            </div>
+        </div>
+
+        <div class="image-card">
+            <h2>Зображення 3: Океан</h2>
+            <div class="image-wrapper">
+                <img data-src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Океан">
+            </div>
+        </div>
+
+        <div class="image-card">
+            <h2>Зображення 4: Нічне місто</h2>
+            <div class="image-wrapper">
+                <img data-src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80" alt="Місто">
+            </div>
+        </div>
+
+        <div class="image-card">
+            <h2>Зображення 5: Ліс</h2>
+            <div class="image-wrapper">
+                <img data-src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80" alt="Ліс">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
